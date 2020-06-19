@@ -19,8 +19,8 @@ Pstate.param{end+1} = {'nsize'          'int'     4              	0       ''};
 
 Pstate.param{end+1} = {'x_pos'          'int'     960           	0       'pixels'};
 Pstate.param{end+1} = {'y_pos'          'int'     324           	0       'pixels'};
-Pstate.param{end+1} = {'x_size'         'float'   46		   	1       'deg'};
-Pstate.param{end+1} = {'y_size'         'float'   6		   	1       'deg'};
+Pstate.param{end+1} = {'x_size'         'float'   46		   	0       'deg'};
+Pstate.param{end+1} = {'y_size'         'float'   6		   	0       'deg'};
 
 Pstate.param{end+1} = {'color_r'        'float'   1             	0       ''};
 Pstate.param{end+1} = {'color_g'        'float'   1             	0       ''};

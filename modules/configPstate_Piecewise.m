@@ -20,7 +20,7 @@ Pstate.param{end+1} = {'ori'         'float'   0       0       'deg'};
 
 Pstate.param{end+1} = {'x_pos'       'int'     960     0       'pixels'};
 Pstate.param{end+1} = {'y_pos'       'int'     540     0       'pixels'};
-Pstate.param{end+1} = {'size'        'float'   3       1       'deg'};
+Pstate.param{end+1} = {'size'        'float'   3       0       'deg'};
 Pstate.param{end+1} = {'mask_type'   'string'  'none'  0       ''};
 
 Pstate.param{end+1} = {'t_period'    'int'     40      0       'frames'};

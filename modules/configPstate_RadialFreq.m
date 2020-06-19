@@ -12,11 +12,11 @@ Pstate.param{3} = {'stim_time'  'float'     1       0                'sec'};
 
 Pstate.param{4} = {'x_pos'       'int'      600       0                'pixels'};
 Pstate.param{5} = {'y_pos'       'int'      400       0                'pixels'};
-Pstate.param{6} = {'x_size'      'float'      3       1                'deg'};
-Pstate.param{7} = {'y_size'      'float'      3       1                'deg'};
+Pstate.param{6} = {'x_size'      'float'      3       0                'deg'};
+Pstate.param{7} = {'y_size'      'float'      3       0                'deg'};
 
-Pstate.param{8} = {'xN'      'int'      1       1                ''};
-Pstate.param{9} = {'yN'      'int'      1       1                ''};
+Pstate.param{8} = {'xN'      'int'      1       0                ''};
+Pstate.param{9} = {'yN'      'int'      1       0                ''};
 
 Pstate.param{10} = {'r0'    'float'     2       0                'deg'};
 Pstate.param{11} = {'rAmp'         'float'        0.1       0                'modulation amp'};

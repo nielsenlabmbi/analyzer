@@ -10,7 +10,7 @@ Pstate.param{1} = {'predelay'  'float'      2       0                'sec'};
 Pstate.param{2} = {'postdelay'  'float'     2       0                'sec'};
 Pstate.param{3} = {'stim_time'  'float'     1       0                'sec'};
 
-Pstate.param{4} = {'width'      'float'      20       1                'deg'};
+Pstate.param{4} = {'width'      'float'      20       0                'deg'};
 
 Pstate.param{5} = {'altazimuth'      'string'   'altitude'       0                ''};
 Pstate.param{6} = {'tilt_alt'         'int'        0       0                'deg'};

@@ -11,12 +11,12 @@ Pstate.param{3} = {'stim_time'  'float'     1       0                'sec'};
 
 Pstate.param{4} = {'x_pos'       'int'      600       0                'pixels'};
 Pstate.param{5} = {'y_pos'       'int'      400       0                'pixels'};
-Pstate.param{6} = {'r_size'      'float'      3       1                'deg'};
-Pstate.param{7} = {'ori'      'int'     0       1                'deg'};%rotation of angle
-Pstate.param{8} = {'acute'      'int'     0       1                'deg'};%size of angle
+Pstate.param{6} = {'r_size'      'float'      3       0                'deg'};
+Pstate.param{7} = {'ori'      'int'     0       0               'deg'};%rotation of angle
+Pstate.param{8} = {'acute'      'int'     0       0                'deg'};%size of angle
 Pstate.param{9} = {'stim_type'   'int'   1       0                ''};
 %options: convex(1),concave(2), line/angleonly (3)
-Pstate.param{10} = {'sharp'      'int'     0       1                ''};
+Pstate.param{10} = {'sharp'      'int'     0       0                ''};
 Pstate.param{11} = {'lineWidth'    'int'   1       0                'pixels'};
 
 Pstate.param{12} = {'maskRadius'    'int'   1       0                'deg'};

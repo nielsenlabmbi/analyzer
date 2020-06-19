@@ -10,10 +10,10 @@ Pstate.param{3} = {'stim_time'  'float'     10       0                'sec'};
 
 Pstate.param{4} = {'x_pos'       'int'      800       0                'pixels'};
 Pstate.param{5} = {'y_pos'       'int'      500       0                'pixels'};
-Pstate.param{6} = {'x_size'      'float'      10       1                'deg'};
-Pstate.param{7} = {'y_size'      'float'      10       1                'deg'};
+Pstate.param{6} = {'x_size'      'float'      10       0                'deg'};
+Pstate.param{7} = {'y_size'      'float'      10       0                'deg'};
 Pstate.param{8} = {'mask_type'   'string'   'none'       0                ''};
-Pstate.param{9} = {'mask_radius' 'float'      6       1                'deg'};
+Pstate.param{9} = {'mask_radius' 'float'      6       0                'deg'};
 
 Pstate.param{10} = {'contrast'    'float'     100       0                '%'};
 
