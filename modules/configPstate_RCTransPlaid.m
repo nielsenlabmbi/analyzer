@@ -24,12 +24,12 @@ Pstate.param{13} = {'n_phase'   'int'   4       0                ''};
 Pstate.param{14} = {'h_per'      'int'   20       1               'frames'};
 Pstate.param{15} = {'blankProb'    'float'   0.05       0                ''};
 
-Pstate.param{17} = {'s_freq'   'float'   0.125       1                'c/deg'};
-Pstate.param{18} = {'s_duty'      'float'   0.5       0                ''};
-Pstate.param{19} = {'drift'    'int'   1         0                 'binary'};
-Pstate.param{20} = {'t_period'    'int'       20       1                'frames'};
+Pstate.param{16} = {'s_freq'   'float'   0.125       1                'c/deg'};
+Pstate.param{17} = {'s_duty'      'float'   0.5       0                ''};
+Pstate.param{18} = {'drift'    'int'   1         0                 'binary'};
+Pstate.param{19} = {'t_period'    'int'       20       1                'frames'};
 
-Pstate.param{21} = {'rseed'    'int'   1       0                ''};
+Pstate.param{20} = {'rseed'    'int'   1       0                ''};
 
-Pstate.param{22} = {'Leye_bit'    'int'   1       0                ''};
-Pstate.param{23} = {'Reye_bit'    'int'   1       0                ''};
+Pstate.param{21} = {'Leye_bit'    'int'   1       0                ''};
+Pstate.param{22} = {'Reye_bit'    'int'   1       0                ''};
