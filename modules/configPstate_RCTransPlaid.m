@@ -1,4 +1,4 @@
-function configPstate_RC2Gratings
+function configPstate_RCTransPlaid
 
 global Pstate
 
@@ -24,8 +24,7 @@ Pstate.param{13} = {'n_phase'   'int'   4       0                ''};
 Pstate.param{14} = {'h_per'      'int'   20       1               'frames'};
 Pstate.param{15} = {'blankProb'    'float'   0.05       0                ''};
 
-Pstate.param{16} = {'s_freq'   'float'   0.125       1                'c/deg'};
-Pstate.param{17} = {'s_profile'   'string'   'sin'       1                ''};
+Pstate.param{17} = {'s_freq'   'float'   0.125       1                'c/deg'};
 Pstate.param{18} = {'s_duty'      'float'   0.5       0                ''};
 Pstate.param{19} = {'drift'    'int'   1         0                 'binary'};
 Pstate.param{20} = {'t_period'    'int'       20       1                'frames'};
