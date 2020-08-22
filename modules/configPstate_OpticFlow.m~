@@ -45,7 +45,7 @@ Pstate.param{18} = {'bluegun' 'float'   1       0             ''};
 Pdoc.param{end+1}='background color';
 Pdoc.param{end+1}='R gun for dots';
 Pdoc.param{end+1}='G gun for dots';
-Pdoc.param{end+1}='B gun for dots';
+Pdoc.param{end+1}='B gun ';
 
 
 
