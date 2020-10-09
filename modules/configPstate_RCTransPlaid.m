@@ -23,8 +23,9 @@ Pdoc.param{end+1}='no mask: x size; mask: maximum x size';
 Pstate.param{end+1} = {'y_size'      'float'      10       1                'deg'};
 Pdoc.param{end+1}='no mask: y size; mask: maximum y size';
 Pstate.param{end+1} = {'mask_type'   'string'   'none'       1                ''};
-Pstate.param{end+1} = {'mask_radius' 'float'      6       0                'deg'};
 Pdoc.param{end+1}='mask; options: none, gauss, disc';
+Pstate.param{end+1} = {'mask_radius' 'float'      6       0                'deg'};
+Pdoc.param{end+1}='mask radius';
 
 Pstate.param{end+1} = {'min_ori'         'int'        0       0                'deg'};
 Pdoc.param{end+1}='Minimum orientation';
@@ -64,4 +65,4 @@ Pdoc.param{end+1}='RNG seed';
 Pstate.param{end+1} = {'Leye_bit'    'int'   1       0                ''};
 Pdoc.param{end+1}='left eye shutter open? 0 - no, 1 - yes';
 Pstate.param{end+1} = {'Reye_bit'    'int'   1       0                ''};
-Pdoc.param{end+1}='left eye shutter open? 0 - no, 1 - yes';
+Pdoc.param{end+1}='right eye shutter open? 0 - no, 1 - yes';
