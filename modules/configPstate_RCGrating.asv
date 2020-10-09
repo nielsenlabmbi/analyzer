@@ -56,24 +56,16 @@ Pstate.param{end+1} = {'n_tp' 'int'   10       0             ''};
 Pdoc.param{end+1}='number of temporal periods';
 
 Pstate.param{end+1} = {'n_phase'   'int'   4       0                ''};
-Pdoc.param{end+1}='number of phases';
 
-Pstate.param{end+1} = {'h_per'      'int'   40       1                'frames'};
-Pdoc.param{end+1}='number of frames per individual stimulus';
-Pstate.param{end+1} = {'blankProb'    'float'   0.05       0                ''};
-Pdoc.param{end+1}='probability of blanks';
+Pstate.param{19} = {'h_per'      'int'   40       1                'frames'};
+Pstate.param{20} = {'blankProb'    'float'   0.05       0                ''};
 
-Pstate.param{end+1} = {'s_profile'   'string'   'sin'       1                ''};
-Pdoc.param{end+1}='spatial profile; options: sin, square';
-Pstate.param{end+1} = {'s_duty'      'float'   0.5       0                ''};
-Pdoc.param{end+1}='duty cycle';
-Pstate.param{end+1} = {'drift'    'int'   1         0                 'binary'};
-Pdoc.param{end+1}='drift? 0 - no, 1 - yes';
+Pstate.param{21} = {'s_profile'   'string'   'sin'       1                ''};
+Pstate.param{22} = {'s_duty'      'float'   0.5       0                ''};
+Pstate.param{23} = {'drift'    'int'   1         0                 'binary'};
+Pstate.param{24} = {'t_period'    'int'       20       1                'frames'};
 
-Pstate.param{end+1} = {'rseed'    'int'   1       0                ''};
-Pdoc.param{end+1}='RNG seed';
+Pstate.param{25} = {'rseed'    'int'   1       0                ''};
 
-Pstate.param{end+1} = {'Leye_bit'    'int'   1       0                ''};
-Pdoc.param{end+1}='left eye shutter open? 0 - no, 1 - yes';
-Pstate.param{end+1} = {'Reye_bit'    'int'   1       0                ''};
-Pdoc.param{end+1}='right eye shutter open? 0 - no, 1 - yes';
+Pstate.param{26} = {'Leye_bit'    'int'   1       0                ''};
+Pstate.param{27} = {'Reye_bit'    'int'   1       0                ''};
