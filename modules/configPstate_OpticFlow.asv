@@ -36,18 +36,18 @@ Pdoc.param{end+1}=['stimulus type: 0 random, 1 - 8 translation in 45 deg steps,'
 Pstate.param{end+1} = {'dotDensity'      'float'      50       1                'dots/deg^2'};
 Pdoc.param{end+1}='dot sensity';
 Pstate.param{end+1} = {'sizeDots'      'float'     0.2       1                'deg'};
-Pdoc.param{end+1}='dot size';
-Pstate.param{end+1} = {'speedDots'      'float'     5       1                'deg/s'};
+Pstate.param{10} = {'speedDots'      'float'     5       1                'deg/s'};
+Pstate.param{11} = {'dotLifetime'      'int'     0       1                'frames'};
+Pstate.param{12} = {'dotType'      'int'     0       0                ''};
+
 Pdoc.param{end+1}='dot speed';
-Pstate.param{end+1} = {'dotLifetime'      'int'     0       1                'frames'};
 Pdoc.param{end+1}='max dot lifetime, 0: infinte';
-Pstate.param{end+1} = {'dotType'      'int'     0       0                ''};
 Pdoc.param{end+1}='dot type: 0 sq, 1 circ ';
 
-Pstate.param{end+1} = {'background'      'float'   0.5       0                ''};
-Pstate.param{end+1} = {'redgun' 'float'   1       0             ''};
-Pstate.param{end+1} = {'greengun' 'float'   1       0             ''};
-Pstate.param{end+1} = {'bluegun' 'float'   1       0             ''};
+Pstate.param{13} = {'background'      'float'   0.5       0                ''};
+Pstate.param{14} = {'redgun' 'float'   1       0             ''};
+Pstate.param{15} = {'greengun' 'float'   1       0             ''};
+Pstate.param{16} = {'bluegun' 'float'   1       0             ''};
 
 Pdoc.param{end+1}='background color';
 Pdoc.param{end+1}='R gun for dots';
