@@ -54,6 +54,8 @@ Pstate.param{end+1} = {'max_tp'   'int'   50       0                'frames'};
 Pdoc.param{end+1}='maximum temporal period';
 Pstate.param{end+1} = {'n_tp' 'int'   10       0             ''};
 Pdoc.param{end+1}='number of temporal periods';
+Pstate.param{end+1} = {'tp_domain'   'string'   'log'       0                ''};
+Pdoc.param{end+1}='temporal period spacing: log or lin';
 
 Pstate.param{end+1} = {'n_phase'   'int'   4       0                ''};
 Pdoc.param{end+1}='number of phases';
