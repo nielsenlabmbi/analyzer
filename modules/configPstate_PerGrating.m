@@ -82,15 +82,17 @@ Pdoc.param{end+1}='temporal period for contrast modulation';
 Pstate.param{34} = {'tmod_tprofile'    'string'      'sin'       0                ''};
 Pdoc.param{end+1}='waveform profile for contrast modulation; options: sin, square';
 
-Pstate.param{35} = {'Leye_bit'    'int'   1       0                ''};
+Pstate.param{35} = {'Leye_bit'    'int'   1       1               ''};
 Pdoc.param{end+1}='left eye shutter open? 0 - no, 1 - yes';
-Pstate.param{36} = {'Reye_bit'    'int'   1       0                ''};
+Pstate.param{36} = {'Reye_bit'    'int'   1       1                ''};
 Pdoc.param{end+1}='right eye shutter open? 0 - no, 1 - yes';
+Pstate.param{37} = {'eye_bit'    'int'   1       1                ''};
+Pdoc.param{end+1}='combined shutter settings; 0: LE+,RE-, 1: LE-,RE+, 2: LE+,RE+ ';
 
-Pstate.param{37} = {'use_ch3'    'int'  0       0                'binary'};
+Pstate.param{38} = {'use_ch3'    'int'  0       0                ''};
 Pdoc.param{end+1}='trigger pulse on channel 3 indicating each grating cycle? 0 - no, 1 - yes';
 
-Pstate.param{38} = {'background'    'float'  0.5       0                'binary'};
+Pstate.param{39} = {'background'    'float'  0.5       0                ''};
 Pdoc.param{end+1}='background luminance';
 
 
