@@ -2,13 +2,15 @@ classdef viewAnalyzer_exported < matlab.apps.AppBase
 
     % Properties that correspond to app components
     properties (Access = public)
-        UIFigure            matlab.ui.Figure
-        PstateTable         matlab.ui.control.Table
-        SelectFileButton    matlab.ui.control.Button
-        FileEditFieldLabel  matlab.ui.control.Label
-        FileField           matlab.ui.control.EditField
+        UIFigure                matlab.ui.Figure
+        PstateTable             matlab.ui.control.Table
+        SelectFileButton        matlab.ui.control.Button
+        FileEditFieldLabel      matlab.ui.control.Label
+        FileField               matlab.ui.control.EditField
         ModuledescriptionEditFieldLabel  matlab.ui.control.Label
-        MDescriptionField   matlab.ui.control.EditField
+        MDescriptionField       matlab.ui.control.EditField
+        ModuleIDEditFieldLabel  matlab.ui.control.Label
+        MIDField                matlab.ui.control.EditField
     end
 
     % Callbacks that handle component events
@@ -25,9 +27,15 @@ classdef viewAnalyzer_exported < matlab.apps.AppBase
             if strcmp(fExt,'.analyzer') 
                 app.FileField.Value=fName;
                 load(fullfile(fPath,fName),'-mat');
-                Pstate=Analyzer.P;       
+                Pstate=Analyzer.P;
+                if isfield(Analyzer,'modID')
+                    app.MIDField.Value=Analyzer.modID;
+                else
+                    app.MIDField.Value='';
+                end
             elseif strcmp(fExt,'.m') %config file
                 app.FileField.Value=fName;
+                app.MIDField.Value='';
                 run(fullfile(fPath,fName));
             end
                 
@@ -95,13 +103,24 @@ classdef viewAnalyzer_exported < matlab.apps.AppBase
 
             % Create ModuledescriptionEditFieldLabel
             app.ModuledescriptionEditFieldLabel = uilabel(app.UIFigure);
-            app.ModuledescriptionEditFieldLabel.Position = [30 592 106 22];
+            app.ModuledescriptionEditFieldLabel.Position = [30 593 106 22];
             app.ModuledescriptionEditFieldLabel.Text = {'Module description'; ''};
 
             % Create MDescriptionField
             app.MDescriptionField = uieditfield(app.UIFigure, 'text');
             app.MDescriptionField.Editable = 'off';
-            app.MDescriptionField.Position = [151 592 722 22];
+            app.MDescriptionField.Position = [151 593 518 22];
+
+            % Create ModuleIDEditFieldLabel
+            app.ModuleIDEditFieldLabel = uilabel(app.UIFigure);
+            app.ModuleIDEditFieldLabel.HorizontalAlignment = 'right';
+            app.ModuleIDEditFieldLabel.Position = [494 631 60 22];
+            app.ModuleIDEditFieldLabel.Text = 'Module ID';
+
+            % Create MIDField
+            app.MIDField = uieditfield(app.UIFigure, 'text');
+            app.MIDField.Editable = 'off';
+            app.MIDField.Position = [569 631 100 22];
 
             % Show the figure after all components are created
             app.UIFigure.Visible = 'on';
