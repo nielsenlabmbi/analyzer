@@ -19,11 +19,11 @@ Pdoc.param{end+1}='Stimulus time period';
 
 Pstate.param{end+1}={'startfg'     'float'    0   1   'sec'};
 Pdoc.param{end+1}='offset between start of a trial phase and start function gen';
-Pstate.param{end+1}={'trialPhaseStart'     int    0   1   ''};
+Pstate.param{end+1}={'trialPhaseStart'     'int'    0   1   ''};
 Pdoc.param{end+1}='trial phase for waveform start; 0: pre, 1: stim';
 Pstate.param{end+1}={'stopfg'     'float'    0   1   'sec'};
 Pdoc.param{end+1}='offset between stop of a trial phase and stop function gen';
-Pstate.param{end+1}={'trialPhaseStop'     int    1   1   ''};
+Pstate.param{end+1}={'trialPhaseStop'     'int'    1   1   ''};
 Pdoc.param{end+1}='trial phase for waveform stop; 0: stim, 1: post';
 
 Pstate.param{end+1} = {'x_pos'       'int'      600       0                'pixels'};
