@@ -14,13 +14,19 @@ Pstate.param{1} = {'predelay'  'float'      2       0                'sec'};
 Pdoc.param{1}='Predelay time period';
 Pstate.param{end+1} = {'postdelay'  'float'     2       0                'sec'};
 Pdoc.param{end+1}='Postdelay time period';
-Pstate.param{end+1} = {'stim_time'  'float'     1       0                'sec'};
+Pstate.param{end+1} = {'stim_time'  'float'     2       0                'sec'};
 Pdoc.param{end+1}='Stimulus time period';
 
 Pstate.param{end+1}={'startfg'     'float'    0   1   'sec'};
-Pdoc.param{end+1}='offset between start of a trial phase and ch1 waveform';
-Pstate.param{end+1}={'relTrialPhase'     int    0   1   ''};
+Pdoc.param{end+1}='offset between start of a trial phase and start function gen';
+Pstate.param{end+1}={'startfg'     'float'    0   1   'sec'};
+Pdoc.param{end+1}='offset between start of a trial phase and start function gen';
+Pstate.param{end+1}={'trialPhaseStart'     'int'    0   1   ''};
 Pdoc.param{end+1}='trial phase for waveform start; 0: pre, 1: stim';
+Pstate.param{end+1}={'stopfg'     'float'    0   1   'sec'};
+Pdoc.param{end+1}='offset between stop of a trial phase and stop function gen';
+Pstate.param{end+1}={'trialPhaseStop'     'int'    1   1   ''};
+Pdoc.param{end+1}='trial phase for waveform stop; 0: stim, 1: post';
 
 Pstate.param{end+1} = {'x_pos'       'int'      600       0                'pixels'};
 Pdoc.param{end+1}='center x coord';
@@ -111,7 +117,7 @@ Pstate.param{end+1}={'rampDur1_C1'     'float' 0.2   0   'sec'};
 Pdoc.param{end+1}='Ramp duration 1 Ch1 (saw, ramp only)';
 Pstate.param{end+1}={'rampDur2_C1'     'float' 0.2   0   'sec'};
 Pdoc.param{end+1}='Ramp duration 2 Ch1 (saw, ramp only)';
-Pstate.param{end+1}={'holdDur_C1'      'float' 1   0   'sec'};
+Pstate.param{end+1}={'holdDur_C1'      'float' 5.6   0   'sec'};
 Pdoc.param{end+1}='Hold duration Ch1 (ramp only)';
 
 Pstate.param{end+1}={'useCh2'     'int'    0   1   ''};

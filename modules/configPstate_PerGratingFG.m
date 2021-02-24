@@ -17,6 +17,8 @@ Pdoc.param{end+1}='Postdelay time period';
 Pstate.param{end+1} = {'stim_time'  'float'     2       0                'sec'};
 Pdoc.param{end+1}='Stimulus time period';
 
+Pstate.param{end+1}={'useFuncGen'     'int'    0   1   ''};
+Pdoc.param{end+1}='generate pulse using function gen';
 Pstate.param{end+1}={'startfg'     'float'    0   1   'sec'};
 Pdoc.param{end+1}='offset between start of a trial phase and start function gen';
 Pstate.param{end+1}={'trialPhaseStart'     'int'    0   1   ''};
