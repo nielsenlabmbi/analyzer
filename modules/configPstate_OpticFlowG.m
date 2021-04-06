@@ -20,7 +20,7 @@ Pstate.param{end+1} = {'x_pos'       'int'      600       0                'pixe
 Pdoc.param{end+1}='center x coord';
 Pstate.param{end+1} = {'y_pos'       'int'      400       0                'pixels'};
 Pdoc.param{end+1}='center y coord';
-Pstate.param{end+1} = {'stimRadius' 'float'      10       1                'deg'};
+Pstate.param{end+1} = {'stimRadius' 'float'      20       1                'deg'};
 Pdoc.param{end+1}='stimulus radius';
 
 Pstate.param{end+1} = {'spiralBit'   'int'      1       1                ''};
@@ -29,7 +29,7 @@ Pstate.param{end+1} = {'ori'   'float'      0       1                'deg'};
 Pdoc.param{end+1}='orientation (translation or spiral space)';
 
 
-Pstate.param{end+1} = {'dotDensity'      'float'      10       1                'dots/deg^2'};
+Pstate.param{end+1} = {'dotDensity'      'float'      1       1                'dots/deg^2'};
 Pdoc.param{end+1}='dot sensity';
 Pstate.param{end+1} = {'sizeDots'      'float'     1       1                'deg'};
 Pdoc.param{end+1}='dot size';
@@ -37,7 +37,9 @@ Pstate.param{end+1} = {'avgSpeedDots'      'float'     5       1                
 Pdoc.param{end+1}='average dot speed';
 Pstate.param{end+1} = {'dotLifetime'      'int'       10     1                'frames'};
 Pdoc.param{end+1}='max dot lifetime';
-Pstate.param{end+1} = {'dotType'      'int'     0       0                ''};
+Pstate.param{end+1} = {'dotCoherence'      'int'       100     1                '%'};
+Pdoc.param{end+1}='coherence';
+Pstate.param{end+1} = {'dotType'      'int'     0       1                ''};
 Pdoc.param{end+1}='dot type: 0 sq, 1 circ ';
 
 Pstate.param{end+1} = {'background'      'float'   0.5       0                ''};
