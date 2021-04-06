@@ -25,7 +25,7 @@ Pdoc.param{end+1}='stimulus radius';
 
 Pstate.param{end+1} = {'spiralBit'   'int'      1       1                ''};
 Pdoc.param{end+1}='0 translation, 1 spiral';
-Pstate.param{end+1} = {'ori'   'flot'      0       1                'deg'};
+Pstate.param{end+1} = {'ori'   'float'      0       1                'deg'};
 Pdoc.param{end+1}='orientation (translation or spiral space)';
 
 
