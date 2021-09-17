@@ -18,5 +18,7 @@ Pdoc.param{end+1}='Rotation duration';
 
 Pstate.param{end+1}={'rotSpeed'     'float'    70  1   'deg/s'};
 Pdoc.param{end+1}='Rotation speed';
+Pstate.param{end+1}={'rotDir'     'int'    1  1   ''};
+Pdoc.param{end+1}='Rotation dir: CW, CCW';
 
 
