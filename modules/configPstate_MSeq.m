@@ -14,7 +14,7 @@ Pstate.param{4} = {'x_pos'       'int'      600       0                'pixels'}
 Pstate.param{5} = {'y_pos'       'int'      400       0                'pixels'};
 Pstate.param{6} = {'size'      'float'      3       1                'deg'};
 
-Pstate.param{7} = {'seqfile'      'string'     '~/stimulator_slave/makeTextures/utils/MSequence.mat'       1                ''};
+Pstate.param{7} = {'seqfile'      'string'     '~/stimulator_slave/makeTextures/utils/MSequence.mat'       0                ''};
 
 Pstate.param{8} = {'h_per'      'int'   3      0                'frames'};
 Pstate.param{9} = {'startOffset'    'int'   0       0                'frames'};
