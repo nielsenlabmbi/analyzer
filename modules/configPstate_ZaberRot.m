@@ -16,6 +16,11 @@ Pdoc.param{end+1}='Postdelay duration';
 Pstate.param{end+1} = {'rotDur'  'float'     0.5       0                'sec'};
 Pdoc.param{end+1}='Rotation duration';
 
+Pstate.param{end+1}={'pos1'     'float'    0  1   'mm'};
+Pdoc.param{end+1}='relative position stage 1';
+Pstate.param{end+1}={'pos2'     'float'    0  1   'mm'};
+Pdoc.param{end+1}='relative position stage 2';
+
 Pstate.param{end+1}={'rotSpeed'     'float'    70  1   'deg/s'};
 Pdoc.param{end+1}='Rotation speed';
 Pstate.param{end+1}={'rotDir'     'int'    1  1   ''};
