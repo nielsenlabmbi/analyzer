@@ -11,7 +11,7 @@ Pdoc=struct;
 Pdoc.general='Drifting bar in front of a stationary or moving texture background';
 
 
-Pstate.param{1} = {'predelay1'  'float'      2       0                'sec'};
+Pstate.param{1} = {'predelay'  'float'      2       0                'sec'};
 Pdoc.param{1}='Predelay time period (gray)';
 Pstate.param{end+1} = {'predelay2'  'float'      2       0                'sec'};
 Pdoc.param{end+1}='Predelay time period (stationary)';
