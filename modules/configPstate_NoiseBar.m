@@ -27,7 +27,7 @@ Pdoc.param{end+1}='center y coord';
 
 
 Pstate.param{end+1} = {'stim_type'      'int'      1       0                ''};
-Pdoc.param{end+1}='0: texture only, 1: bar moving, 2: bar+texture moving';
+Pdoc.param{end+1}='0: texture only, 1: bar only, 2: bar + texture, bar moving, 3: bar+texture moving';
 
 Pstate.param{end+1} = {'bar_length'      'float'      10       0                'deg'};
 Pdoc.param{end+1}='bar length';
