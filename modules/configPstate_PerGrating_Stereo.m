@@ -46,6 +46,7 @@ Pstate.param{17} = {'plaid_bit'    'int'        0       0             'binary'};
 Pdoc.param{end+1}='plaid? 0 - single grating, 1 - yes';
 Pstate.param{18} = {'surround_bit'    'int'        0       0             'binary'};
 Pdoc.param{end+1}='surround? 0 - no, 1 - yes';
+
 Pstate.param{19} = {'x_size2'      'float'      3       0                'deg'};
 Pdoc.param{end+1}='x size grating 2';
 Pstate.param{20} = {'y_size2'      'float'      3       0                'deg'};
@@ -94,7 +95,7 @@ Pstate.param{39} = {'background'    'float'  0.5       0                ''};
 Pdoc.param{end+1}='background luminance';
 
 %for stim #2
-
+Pstate.param{40}={'stim2'};
 Pstate.param{41} = {'predelay'  'float'      2       0                'sec'};
 Pdoc.param{end+1}='Predelay time period';
 Pstate.param{42} = {'postdelay'  'float'     2       0                'sec'};
