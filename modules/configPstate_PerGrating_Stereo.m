@@ -2,12 +2,11 @@ function configPstate_PerGrating_Stereo
 
 %periodic grater
 
-global Pstate Pdoc Pstate2 Pdoc2
-
+global Pstate Pdoc 
 Pstate = struct; %clear it
 Pdoc=struct;
 
-Pdoc.general='Sine- and square-wave gratings, including plaids and center/surround stimuli';
+Pdoc.general='Sine- and square-wave gratings, including plaids and center/surround stimuli- be sure to set for both sides';
 
 Pstate.param{1} = {'predelay'  'float'      2       0                'sec'};
 Pdoc.param{1}='Predelay time period';
@@ -47,32 +46,27 @@ Pstate.param{17} = {'plaid_bit'    'int'        0       0             'binary'};
 Pdoc.param{end+1}='plaid? 0 - single grating, 1 - yes';
 Pstate.param{18} = {'surround_bit'    'int'        0       0             'binary'};
 Pdoc.param{end+1}='surround? 0 - no, 1 - yes';
-%Other side
-Pstate.param{19} = {'x_pos2'       'int'      600       0                'pixels'};
-Pdoc.param{end+1}='center x coord';
-Pstate.param{20} = {'y_pos2'       'int'      400       0                'pixels'};
-Pdoc.param{end+1}='center y coord';
-Pstate.param{21} = {'x_size2'      'float'      3       0                'deg'};
+Pstate.param{19} = {'x_size2'      'float'      3       0                'deg'};
 Pdoc.param{end+1}='x size grating 2';
-Pstate.param{22} = {'y_size2'      'float'      3       0                'deg'};
+Pstate.param{20} = {'y_size2'      'float'      3       0                'deg'};
 Pdoc.param{end+1}='y size grating 2';
-Pstate.param{23} = {'mask_type2'   'string'   'none'       0                ''};
+Pstate.param{21} = {'mask_type2'   'string'   'none'       0                ''};
 Pdoc.param{end+1}='mask type grating 2; options: none, gauss, disc';
-Pstate.param{24} = {'mask_radius2' 'float'      6       0                'deg'};
+Pstate.param{22} = {'mask_radius2' 'float'      6       0                'deg'};
 Pdoc.param{end+1}='mask radius grating 2';
-Pstate.param{25} = {'contrast2'    'float'     10       0                '%'};
+Pstate.param{23} = {'contrast2'    'float'     10       0                '%'};
 Pdoc.param{end+1}='contrast grating 2';
-Pstate.param{26} = {'ori2'         'float'        90       0                'deg'};
+Pstate.param{24} = {'ori2'         'float'        90       0                'deg'};
 Pdoc.param{end+1}='orientation grating 2';
-Pstate.param{27} = {'phase2'         'float'        0       0                'deg'};
+Pstate.param{25} = {'phase2'         'float'        0       0                'deg'};
 Pdoc.param{end+1}='phase grating 2';
-Pstate.param{28} = {'s_freq2'      'float'      1      0                 'cyc/deg'};
+Pstate.param{26} = {'s_freq2'      'float'      1      0                 'cyc/deg'};
 Pdoc.param{end+1}='spatial frequency grating 2';
-Pstate.param{29} = {'s_profile2'   'string'   'sin'       0                ''};
+Pstate.param{27} = {'s_profile2'   'string'   'sin'       0                ''};
 Pdoc.param{end+1}='spatial profile grating 2; options: sin, square';
-Pstate.param{30} = {'s_duty2'      'float'   0.5       0                ''};
+Pstate.param{28} = {'s_duty2'      'float'   0.5       0                ''};
 Pdoc.param{end+1}='duty cycle grating 2';
-Pstate.param{31} = {'t_period2'    'int'       20       0                'frames'};
+Pstate.param{29} = {'t_period2'    'int'       20       0                'frames'};
 Pdoc.param{end+1}='temporal period grating 2';
 
 Pstate.param{30} = {'tmod_bit'    'int'       0       0                ''};
@@ -100,93 +94,91 @@ Pstate.param{39} = {'background'    'float'  0.5       0                ''};
 Pdoc.param{end+1}='background luminance';
 
 %for stim #2
-Pdoc2.general='Sine- and square-wave gratings, including plaids and center/surround stimuli';
 
-Pstate2.param{1} = {'predelay'  'float'      2       0                'sec'};
-Pdoc2.param{1}='Predelay time period';
-Pstate2.param{2} = {'postdelay'  'float'     2       0                'sec'};
-Pdoc2.param{end+1}='Postdelay time period';
-Pstate2.param{3} = {'stim_time'  'float'     1       0                'sec'};
-Pdoc2.param{end+1}='Stimulus time period';
+Pstate.param{41} = {'predelay'  'float'      2       0                'sec'};
+Pdoc.param{1}='Predelay time period';
+Pstate.param{42} = {'postdelay'  'float'     2       0                'sec'};
+Pdoc.param{end+1}='Postdelay time period';
+Pstate.param{43} = {'stim_time'  'float'     1       0                'sec'};
+Pdoc.param{end+1}='Stimulus time period';
 
-Pstate2.param{4} = {'x_pos'       'int'      600       0                'pixels'};
-Pdoc2.param{end+1}='center x coord';
-Pstate2.param{5} = {'y_pos'       'int'      400       0                'pixels'};
-Pdoc2.param{end+1}='center y coord';
-Pstate2.param{6} = {'x_size'      'float'      3       1                'deg'};
-Pdoc2.param{end+1}='no mask: x size; mask: maximum x size';
-Pstate2.param{7} = {'y_size'      'float'      3       1                'deg'};
-Pdoc2.param{end+1}='no mask: y size; mask: maximum y size';
-Pstate2.param{8} = {'mask_type'   'string'   'none'       1                ''};
-Pdoc2.param{end+1}='mask; options: none, gauss, disc';
-Pstate2.param{9} = {'mask_radius' 'float'      6       0                'deg'};
-Pdoc2.param{end+1}='mask radius';
+Pstate.param{44} = {'x_pos'       'int'      600       0                'pixels'};
+Pdoc.param{end+1}='center x coord';
+Pstate.param{45} = {'y_pos'       'int'      400       0                'pixels'};
+Pdoc.param{end+1}='center y coord';
+Pstate.param{46} = {'x_size'      'float'      3       1                'deg'};
+Pdoc.param{end+1}='no mask: x size; mask: maximum x size';
+Pstate.param{47} = {'y_size'      'float'      3       1                'deg'};
+Pdoc.param{end+1}='no mask: y size; mask: maximum y size';
+Pstate.param{48} = {'mask_type'   'string'   'none'       1                ''};
+Pdoc.param{end+1}='mask; options: none, gauss, disc';
+Pstate.param{49} = {'mask_radius' 'float'      6       0                'deg'};
+Pdoc.param{end+1}='mask radius';
 
-Pstate2.param{10} = {'contrast'    'float'     100       1                '%'};
-Pdoc2.param{end+1}='contrast';
-Pstate2.param{11} = {'ori'         'float'        0       0                'deg'};
-Pdoc2.param{end+1}='orientation';
-Pstate2.param{12} = {'phase'         'float'        0       0                'deg'};
-Pdoc2.param{end+1}='phase';
-Pstate2.param{13} = {'s_freq'      'float'      1      1                 'cyc/deg'};
-Pdoc2.param{end+1}='spatial frequency';
-Pstate2.param{14} = {'s_profile'   'string'   'sin'       1                ''};
-Pdoc2.param{end+1}='spatial profile; options: sin, square';
-Pstate2.param{15} = {'s_duty'      'float'   0.5       0                ''};
-Pdoc2.param{end+1}='duty cycle';
-Pstate2.param{16} = {'t_period'    'int'       20       1                'frames'};
-Pdoc2.param{end+1}='temporal perid (Nr frames for 1 cycle)';
-Pstate2.param{17} = {'plaid_bit'    'int'        0       0             'binary'};
-Pdoc2.param{end+1}='plaid? 0 - single grating, 1 - yes';
-Pstate2.param{18} = {'surround_bit'    'int'        0       0             'binary'};
-Pdoc2.param{end+1}='surround? 0 - no, 1 - yes';
+Pstate.param{50} = {'contrast'    'float'     100       1                '%'};
+Pdoc.param{end+1}='contrast';
+Pstate.param{51} = {'ori'         'float'        0       0                'deg'};
+Pdoc.param{end+1}='orientation';
+Pstate.param{52} = {'phase'         'float'        0       0                'deg'};
+Pdoc.param{end+1}='phase';
+Pstate.param{53} = {'s_freq'      'float'      1      1                 'cyc/deg'};
+Pdoc.param{end+1}='spatial frequency';
+Pstate.param{54} = {'s_profile'   'string'   'sin'       1                ''};
+Pdoc.param{end+1}='spatial profile; options: sin, square';
+Pstate.param{55} = {'s_duty'      'float'   0.5       0                ''};
+Pdoc.param{end+1}='duty cycle';
+Pstate.param{56} = {'t_period'    'int'       20       1                'frames'};
+Pdoc.param{end+1}='temporal perid (Nr frames for 1 cycle)';
+Pstate.param{57} = {'plaid_bit'    'int'        0       0             'binary'};
+Pdoc.param{end+1}='plaid? 0 - single grating, 1 - yes';
+Pstate.param{58} = {'surround_bit'    'int'        0       0             'binary'};
+Pdoc.param{end+1}='surround? 0 - no, 1 - yes';
+%Other side
+Pstate.param{59} = {'x_size2'      'float'      3       0                'deg'};
+Pdoc.param{end+1}='x size grating 2';
+Pstate.param{60} = {'y_size2'      'float'      3       0                'deg'};
+Pdoc.param{end+1}='y size grating 2';
+Pstate.param{61} = {'mask_type2'   'string'   'none'       0                ''};
+Pdoc.param{end+1}='mask type grating 2; options: none, gauss, disc';
+Pstate.param{62} = {'mask_radius2' 'float'      6       0                'deg'};
+Pdoc.param{end+1}='mask radius grating 2';
+Pstate.param{63} = {'contrast2'    'float'     10       0                '%'};
+Pdoc.param{end+1}='contrast grating 2';
+Pstate.param{64} = {'ori2'         'float'        90       0                'deg'};
+Pdoc.param{end+1}='orientation grating 2';
+Pstate.param{65} = {'phase2'         'float'        0       0                'deg'};
+Pdoc.param{end+1}='phase grating 2';
+Pstate.param{66} = {'s_freq2'      'float'      1      0                 'cyc/deg'};
+Pdoc.param{end+1}='spatial frequency grating 2';
+Pstate.param{67} = {'s_profile2'   'string'   'sin'       0                ''};
+Pdoc.param{end+1}='spatial profile grating 2; options: sin, square';
+Pstate.param{68} = {'s_duty2'      'float'   0.5       0                ''};
+Pdoc.param{end+1}='duty cycle grating 2';
+Pstate.param{69} = {'t_period2'    'int'       20       0                'frames'};
+Pdoc.param{end+1}='temporal period grating 2';
 
-Pstate2.param{19} = {'x_size2'      'float'      3       0                'deg'};
-Pdoc2.param{end+1}='x size grating 2';
-Pstate2.param{20} = {'y_size2'      'float'      3       0                'deg'};
-Pdoc2.param{end+1}='y size grating 2';
-Pstate2.param{21} = {'mask_type2'   'string'   'none'       0                ''};
-Pdoc2.param{end+1}='mask type grating 2; options: none, gauss, disc';
-Pstate2.param{22} = {'mask_radius2' 'float'      6       0                'deg'};
-Pdoc2.param{end+1}='mask radius grating 2';
-Pstate2.param{23} = {'contrast2'    'float'     10       0                '%'};
-Pdoc2.param{end+1}='contrast grating 2';
-Pstate2.param{24} = {'ori2'         'float'        90       0                'deg'};
-Pdoc2.param{end+1}='orientation grating 2';
-Pstate2.param{25} = {'phase2'         'float'        0       0                'deg'};
-Pdoc2.param{end+1}='phase grating 2';
-Pstate2.param{26} = {'s_freq2'      'float'      1      0                 'cyc/deg'};
-Pdoc2.param{end+1}='spatial frequency grating 2';
-Pstate2.param{27} = {'s_profile2'   'string'   'sin'       0                ''};
-Pdoc2.param{end+1}='spatial profile grating 2; options: sin, square';
-Pstate2.param{28} = {'s_duty2'      'float'   0.5       0                ''};
-Pdoc2.param{end+1}='duty cycle grating 2';
-Pstate2.param{29} = {'t_period2'    'int'       20       0                'frames'};
-Pdoc2.param{end+1}='temporal period grating 2';
+Pstate.param{70} = {'tmod_bit'    'int'       0       0                ''};
+Pdoc.param{end+1}='temporal contrast modulation? 0 - no, 1 - yes';
+Pstate.param{71} = {'tmod_max'    'int'       100       0                '% contrast'};
+Pdoc.param{end+1}='max contrast';
+Pstate.param{72} = {'tmod_min'    'int'       0       0                '% contrast'};
+Pdoc.param{end+1}='min contrast';
+Pstate.param{73} = {'tmod_tperiod'    'int'       20       0                'frames'};
+Pdoc.param{end+1}='temporal period for contrast modulation';
+Pstate.param{74} = {'tmod_tprofile'    'string'      'sin'       0                ''};
+Pdoc.param{end+1}='waveform profile for contrast modulation; options: sin, square';
 
-Pstate2.param{30} = {'tmod_bit'    'int'       0       0                ''};
-Pdoc2.param{end+1}='temporal contrast modulation? 0 - no, 1 - yes';
-Pstate2.param{31} = {'tmod_max'    'int'       100       0                '% contrast'};
-Pdoc2.param{end+1}='max contrast';
-Pstate2.param{32} = {'tmod_min'    'int'       0       0                '% contrast'};
-Pdoc2.param{end+1}='min contrast';
-Pstate2.param{33} = {'tmod_tperiod'    'int'       20       0                'frames'};
-Pdoc2.param{end+1}='temporal period for contrast modulation';
-Pstate2.param{34} = {'tmod_tprofile'    'string'      'sin'       0                ''};
-Pdoc2.param{end+1}='waveform profile for contrast modulation; options: sin, square';
+Pstate.param{75} = {'Leye_bit'    'int'   1       1               ''};
+Pdoc.param{end+1}='left eye shutter open? 0 - no, 1 - yes';
+Pstate.param{76} = {'Reye_bit'    'int'   1       1                ''};
+Pdoc.param{end+1}='right eye shutter open? 0 - no, 1 - yes';
+Pstate.param{77} = {'eye_bit'    'int'   1       1                ''};
+Pdoc.param{end+1}='combined shutter settings; 0: LE+,RE-, 1: LE-,RE+, 2: LE+,RE+ ';
 
-Pstate2.param{35} = {'Leye_bit'    'int'   1       1               ''};
-Pdoc2.param{end+1}='left eye shutter open? 0 - no, 1 - yes';
-Pstate2.param{36} = {'Reye_bit'    'int'   1       1                ''};
-Pdoc2.param{end+1}='right eye shutter open? 0 - no, 1 - yes';
-Pstate2.param{37} = {'eye_bit'    'int'   1       1                ''};
-Pdoc2.param{end+1}='combined shutter settings; 0: LE+,RE-, 1: LE-,RE+, 2: LE+,RE+ ';
+Pstate.param{78} = {'use_ch3'    'int'  0       0                ''};
+Pdoc.param{end+1}='trigger pulse on channel 3 indicating each grating cycle? 0 - no, 1 - yes';
 
-Pstate2.param{38} = {'use_ch3'    'int'  0       0                ''};
-Pdoc2.param{end+1}='trigger pulse on channel 3 indicating each grating cycle? 0 - no, 1 - yes';
-
-Pstate2.param{39} = {'background'    'float'  0.5       0                ''};
-Pdoc2.param{end+1}='background luminance';
-
+Pstate.param{79} = {'background'    'float'  0.5       0                ''};
+Pdoc.param{end+1}='background luminance';
 
 
