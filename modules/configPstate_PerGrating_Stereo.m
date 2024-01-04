@@ -96,7 +96,7 @@ Pdoc.param{end+1}='background luminance';
 %for stim #2
 
 Pstate.param{41} = {'predelay'  'float'      2       0                'sec'};
-Pdoc.param{1}='Predelay time period';
+Pdoc.param{end+1}='Predelay time period';
 Pstate.param{42} = {'postdelay'  'float'     2       0                'sec'};
 Pdoc.param{end+1}='Postdelay time period';
 Pstate.param{43} = {'stim_time'  'float'     1       0                'sec'};
