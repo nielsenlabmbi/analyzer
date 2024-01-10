@@ -86,7 +86,7 @@ Pstate.param{61} = {'bluegun2' 'float'   1       0             ''};
 
 Pstate.param{62} = {'Leye_bit'    'int'   1       0                ''};
 Pstate.param{63} = {'Reye_bit'    'int'   1       0                ''};
-Pstate.param{65}= {'StereoDisp'     'int'   0   0       '0=stereo, 1=L eye, 2= R eye'};
+Pstate.param{64}= {'StereoDisp'     'int'   0   0       '0=stereo, 1=L eye, 2= R eye'};
 
 
 
