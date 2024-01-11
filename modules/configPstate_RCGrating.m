@@ -29,9 +29,6 @@ Pdoc.param{end+1}='mask; options: none, gauss, disc';
 Pstate.param{end+1} = {'mask_radius' 'float'      6       0                'deg'};
 Pdoc.param{end+1}='mask radius';
 
-Pstate.param{end+1} = {'contrast'    'float'     100       1                '%'};
-Pdoc.param{end+1}='contrast';
-
 Pstate.param{end+1} = {'min_ori'         'int'        0       0                'deg'};
 Pdoc.param{end+1}='minimum orientation';
 Pstate.param{end+1} = {'orirange'         'int'        360       0                'deg'};
