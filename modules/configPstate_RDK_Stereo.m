@@ -90,8 +90,8 @@ Pstate.param{64}= {'StereoDisp'     'int'   0   0       '0=stereo, 1=L eye, 2= R
 %for coding a varying offset rather than changing X and Y values
 Pstate.param{65}= {'dx1' 'int' 0 0 'deg'};
 Pstate.param{66}={'dy1' 'int'  0  0 'deg'};
-Pstate.param{65}= {'dx2' 'int' 0 0 'deg'};
-Pstate.param{66}={'dy2' 'int'  0  0 'deg'};
+Pstate.param{67}= {'dx2' 'int' 0 0 'deg'};
+Pstate.param{68}={'dy2' 'int'  0  0 'deg'};
 
 
 
