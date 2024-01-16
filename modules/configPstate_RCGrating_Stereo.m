@@ -28,6 +28,8 @@ Pstate.param{end+1} = {'mask_type'   'string'   'none'       1                ''
 Pdoc.param{end+1}='mask; options: none, gauss, disc';
 Pstate.param{end+1} = {'mask_radius' 'float'      6       0                'deg'};
 Pdoc.param{end+1}='mask radius';
+Pstate.param{end+1} = {'contrast'    'float'     100       1                '%'};
+Pdoc.param{end+1}='contrast';
 
 Pstate.param{end+1} = {'x_pos2'       'int'      800       0                'pixels'};
 Pdoc.param{end+1}='center x coord';
