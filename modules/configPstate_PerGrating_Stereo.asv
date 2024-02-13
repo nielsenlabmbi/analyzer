@@ -109,5 +109,5 @@ Pstate.param{45} = {'background'    'float'  0.5       0                ''};
 Pdoc.param{end+1}='background luminance';
 Pstate.param{46}= {'StereoDisp'     'int'   0   0       ''};
 Pdoc.param{end+1}='0=stereo, 1=L eye, 2= R eye'; 
-Pstate.param{46}= {'mirrorXCoord'     'int'   0   0       ''};
+Pstate.param{46}= {'Mirror Coordinates'     'int'   0   0       ''};
 Pdoc.param{end+1}='0=no, 1=xypos1==xypos2, 2= xypos2==xypos1'; 
