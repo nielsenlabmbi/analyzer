@@ -61,9 +61,6 @@ Pdoc.param{end+1}='orientation range';
 Pstate.param{end+1} = {'n_ori2'    'int'   16       0                ''};
 Pdoc.param{end+1}='number of orientations';
 
-Pstate.param{end+1} = {'KeepSame_ori'   'int'   0     0                ''};
-Pdoc.param{end+1}='0=vary both eyes independently 1=same value for both eyes ';
-
 Pstate.param{end+1} = {'min_sf1'   'float'   0.05       0                'c/deg'};
 Pdoc.param{end+1}='minimum spatial frequency';
 Pstate.param{end+1} = {'max_sf1'   'float'   1       0                'c/deg'};
@@ -82,8 +79,8 @@ Pdoc.param{end+1}='number of spatial frequencies';
 Pstate.param{end+1} = {'sf_domain2'   'string'   'log'       0                ''};
 Pdoc.param{end+1}='spatial frequency spacing: log or lin';
 
-Pstate.param{end+1} = {'KeepSame_sf'   'int'   0     0                ''};
-Pdoc.param{end+1}='0=vary both eyes independently 1=same value for both eyes ';
+Pstate.param{end+1} = {'KeepSame'   'string'   'log'       0                ''};
+Pdoc.param{end+1}='spatial frequency spacing: log or lin';
 
 
 
@@ -105,17 +102,11 @@ Pdoc.param{end+1}='number of temporal periods';
 Pstate.param{end+1} = {'tp_domain2'   'string'   'log'       0                ''};
 Pdoc.param{end+1}='temporal period spacing: log or lin';
 
-Pstate.param{end+1} = {'KeepSame_tp'   'int'   0     0                ''};
-Pdoc.param{end+1}='0=vary both eyes independently 1=same value for both eyes ';
-
 Pstate.param{end+1} = {'n_phase'   'int'   4       0                ''};
 Pdoc.param{end+1}='number of phases';
 
 Pstate.param{end+1} = {'n_phase2'   'int'   4       0                ''};
 Pdoc.param{end+1}='number of phases';
-
-Pstate.param{end+1} = {'KeepSame_phase'   'int'   0     0                ''};
-Pdoc.param{end+1}='0=vary both eyes independently 1=same value for both eyes ';
 
 Pstate.param{end+1} = {'h_per'      'int'   40       1                'frames'};
 Pdoc.param{end+1}='number of frames per individual stimulus';
