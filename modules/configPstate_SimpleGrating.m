@@ -54,14 +54,16 @@ Pdoc.param{end+1}='maximum lum, 0-1 (lum mode)';
 Pstate.param{end+1} = {'min_lum'    'float'     0       1                ''};
 Pdoc.param{end+1}='mininum lum, 0-1 (contrast mode)';
 
-Pstate.param{end+1} = {'tmod_max'    'int'       100       0                '% contrast'};
+Pstate.param{end+1} = {'tmod_max'    'float'       100       1                '%'};
 Pdoc.param{end+1}='max contrast (tmod mode)';
-Pstate.param{end+1} = {'tmod_min'    'int'       0       0                '% contrast'};
+Pstate.param{end+1} = {'tmod_min'    'flot'       0       0                '%'};
 Pdoc.param{end+1}='min contrast (tmod mode)';
+Pstate.param{end+1} = {'tmod_mean'    'flot'       0.5       0                ''};
+Pdoc.param{end+1}='mean luminance (tmod mode)';
 Pstate.param{end+1} = {'tmod_tperiod'    'int'       20       0                'frames'};
-Pdoc.param{end+1}='temporal period for contrast modulation';
+Pdoc.param{end+1}='temporal period (tmod mode)';
 Pstate.param{end+1} = {'tmod_tprofile'    'string'      'sin'       0                ''};
-Pdoc.param{end+1}='waveform profile for contrast modulation; options: sin, square';
+Pdoc.param{end+1}='waveform profile (tmod mode); options: sin, square';
 
 Pstate.param{end+1} = {'background'    'float'  0.5       0                ''};
 Pdoc.param{end+1}='background luminance';
