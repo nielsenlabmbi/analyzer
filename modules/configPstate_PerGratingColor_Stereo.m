@@ -36,4 +36,4 @@ Pstate.param{23} = {'colormod'    'int'   1       0                ''};
 Pstate.param{24} = {'Leye_bit'    'int'   1       0                ''};
 Pstate.param{25} = {'Reye_bit'    'int'   1       0                ''};
 
-P.state.param{26}={'background'     'int'   .5      0       'background color'};
+Pstate.param{26}={'background'     'int'   .5      0       'background color'};
