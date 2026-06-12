@@ -80,16 +80,11 @@ Pstate.param{end+1} = {'dotCoherence2'      'int'     100       0               
 Pdoc.param{end+1}='coherence stim 2';
 
 Pstate.param{end+1} = {'redgun' 'float'   1       0             ''};
-Pdoc.param{end+1}='red gun';
 Pstate.param{end+1} = {'greengun' 'float'   1       0             ''};
-Pdoc.param{end+1}='green gun';
 Pstate.param{end+1} = {'bluegun' 'float'   1       0             ''};
-Pdoc.param{end+1}='blue gun';
 
 Pstate.param{end+1} = {'Leye_bit'    'int'   1       0                ''};
-Pdoc.param{end+1}='shutter left';
 Pstate.param{end+1} = {'Reye_bit'    'int'   1       0                ''};
-Pdoc.param{end+1}='shutter right';
 
 
 
