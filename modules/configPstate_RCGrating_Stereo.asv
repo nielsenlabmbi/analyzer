@@ -136,7 +136,7 @@ Pstate.param{end+1}= {'StereoDisp'     'int'   0   0       ''};
 Pdoc.param{end+1}='0=stereo, 1=L eye, 2= R eye'; 
 
 Pstate.param{end+1}= {'EyeVary'     'int'   0   0       ''};
-Pdoc.param{end+1}='Eye fixed or random L/R'; 
+Pdoc.param{end+1}='Eye fixed or random L/'; 
 
 Pstate.param{end+1} = {'Leye_bit'    'int'   1       0                ''};
 Pdoc.param{end+1}='left eye shutter open? 0 - no, 1 - yes';
