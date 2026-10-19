@@ -42,8 +42,6 @@ Pstate.param{end+1} = {'mask_type2'   'string'   'none'       1                '
 Pdoc.param{end+1}='mask; options: none, gauss, disc';
 Pstate.param{end+1} = {'mask_radius2' 'float'      6       0                'deg'};
 Pdoc.param{end+1}='mask radius2';
-Pstate.param{end+1} = {'contrast2'    'float'     100       1                '%'};
-Pdoc.param{end+1}='contrast';
 
 Pstate.param{end+1} = {'min_ori1'         'int'        0       0                'deg'};
 Pdoc.param{end+1}='minimum orientation';
@@ -51,7 +49,6 @@ Pstate.param{end+1} = {'orirange1'         'int'        360       0             
 Pdoc.param{end+1}='orientation range';
 Pstate.param{end+1} = {'n_ori1'    'int'   16       0                ''};
 Pdoc.param{end+1}='number of orientations';
-
 
 Pstate.param{end+1} = {'min_ori2'         'int'        0       0                'deg'};
 Pdoc.param{end+1}='minimum orientation';
@@ -114,18 +111,18 @@ Pdoc.param{end+1}='number of phases';
 Pstate.param{end+1} = {'KeepSame_phase'   'int'   0     0                ''};
 Pdoc.param{end+1}='0=vary both eyes independently 1=same value for both eyes ';
 
-Pstate.param{end+1} = {'min_ctr1'   'int'   100       0                'frames'};
+Pstate.param{end+1} = {'min_ctr1'   'int'   100       0                ''};
 Pdoc.param{end+1}='minimum contrast';
-Pstate.param{end+1} = {'max_ctr1'   'int'   100       0                'frames'};
+Pstate.param{end+1} = {'max_ctr1'   'int'   100       0                ''};
 Pdoc.param{end+1}='maximum contrast';
 Pstate.param{end+1} = {'n_ctr1' 'int'   1       0             ''};
 Pdoc.param{end+1}='number of contrasts';
 Pstate.param{end+1} = {'ctr_domain1'   'string'   'log'       0                ''};
 Pdoc.param{end+1}='contrast spacing: log or lin';
 
-Pstate.param{end+1} = {'min_ctr2'   'int'   100       0                'frames'};
+Pstate.param{end+1} = {'min_ctr2'   'int'   100       0                ''};
 Pdoc.param{end+1}='minimum contrast';
-Pstate.param{end+1} = {'max_ctr2'   'int'   100       0                'frames'};
+Pstate.param{end+1} = {'max_ctr2'   'int'   100       0                ''};
 Pdoc.param{end+1}='maximum contrast';
 Pstate.param{end+1} = {'n_ctr2' 'int'   1       0             ''};
 Pdoc.param{end+1}='number of contrasts';
